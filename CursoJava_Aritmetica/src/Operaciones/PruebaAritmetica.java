@@ -4,13 +4,16 @@ public class PruebaAritmetica {
 
     public static void main(String[] args) {
 
-        Aritmetica operacion = new Aritmetica();
-        operacion.a = 3;
-        operacion.b = 2;
-        operacion.suma();
+        Aritmetica aritmetica = new Aritmetica();
+        aritmetica.a = 3;
+        aritmetica.b = 2;
+        aritmetica.suma();
 
-        int resultado = operacion.sumarConRetorno();
+        int resultado = aritmetica.sumarConRetorno();
         System.out.println("resultado desde main= " + resultado);
+
+        resultado = aritmetica.sumarConArgumentos(5, 5);
+        System.out.println("resultado = " + resultado);
 
     }
 }
